@@ -1,0 +1,104 @@
+.edit .img{
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRP5vbnSxJVZ16WVopaevd_-PGXmvw9bu7rs_evFksyrjWamWcL');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.edit{
+    font-family: sans-serif;
+    padding-bottom: 2%;
+}
+.edit .img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e7edf4;
+    opacity: 0.95;
+    z-index: 1; 
+}
+.edit .edit1{
+    width: 60%;
+    margin: auto;
+    padding: 2%;
+    position: absolute;
+    background-color: white;
+    right:20%;
+    top: 40%;
+    z-index: 2;
+    margin-bottom: 2%;
+    border-top: 4px solid grey;
+}
+.edit .back:hover{
+    color: grey;
+}
+.edit .back{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 2;
+}
+.edit .edit1 form{
+    padding: 2%;
+}
+.edit .edit1 form label{
+    font-weight: bold;
+}
+.edit .edit1 .btn{
+    width: 25%;
+}
+.edit .edit1 .but{
+    text-align: center;
+}
+.edit .edit1 h1{
+    text-align: center;
+    color: rgb(11, 129, 90);
+    font-weight: bold;
+}
+.edit .modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.edit .modal-overlay .modal-dialog {
+    width: 400px;
+    box-shadow: 5px 5px 5px grey, -5px -5px 5px grey;
+    background-color: white;
+    padding: 1rem; 
+}
+@media  screen and (max-width:576px) {
+    .edit .modal-dialog .modal-overlay{
+      width: 250px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:996px){
+   .edit .edit1{
+    width: 90%;
+    left: 5%;
+   }
+}
+@media screen and (max-width:556px){
+    .edit .edit1{
+        width: 90%;
+        left:4%;
+       }
+       .edit .edit1 .but .btn{
+        width: 80%;
+       }
+       .edit .back{
+        top: 20%;
+       }
+}

@@ -1,0 +1,38 @@
+.viewevent{
+    font-family: sans-serif;
+    background-color: #e7edf4;
+    min-height: 100vh;
+    padding-bottom: 5%;
+}
+.viewevent .des{
+    width: 50%;
+    margin: auto;
+    box-shadow: -5px -5px 5px grey,5px 5px 5px grey;
+    padding: 2%;
+    background-color: white;
+}
+.viewevent .des h1{
+    text-align: center;
+    color: rgb(11, 129, 90);
+    font-weight: bold;
+}
+.viewevent .des .but{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.viewevent .back{
+    padding-bottom: 3%;
+}
+.viewevent .back:hover{
+    color: gray;
+}
+.viewevent .but button:hover{
+    background-color: rgb(11, 129, 90);
+}
+@media screen and (max-width:996px){
+    .viewevent .des{
+        width: 90%;
+    }
+}

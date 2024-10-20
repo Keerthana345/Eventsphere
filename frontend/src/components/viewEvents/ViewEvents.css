@@ -1,0 +1,86 @@
+.v2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.v3 {
+    position: relative;
+    box-shadow: -5px -5px 5px grey, 5px 5px 5px grey;
+    padding: 2%;
+    width: 400px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+    background-color: white;
+    font-size: 1.5rem;
+}
+.v3:hover {
+    transform: scale(1.05); 
+    box-shadow: 10px 10px 10px grey , -10px -10px 10px grey;
+}
+
+
+.v3 .btn{
+    display: block;
+}
+.view{
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #e7edf4;
+}
+.v1{
+    padding: 3%;
+}
+.v1 h1{
+    font-weight: bolder;
+    margin-top: 20px;
+    color:  rgb(11, 129, 90);
+}
+.v1 h2{
+    font-weight: bold;
+}
+.v3 span{
+    color: rgb(11, 129, 90);
+    font-weight: bold;
+}
+.view .modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.view .modal-overlay .modal-dialog {
+    width: 400px;
+    box-shadow: 5px 5px 5px grey, -5px -5px 5px grey;
+    background-color: white;
+    padding: 1rem; 
+}
+.view .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+.view .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.view .back:hover{
+    color: gray;
+}
+
+@media  screen and (max-width:576px) {
+    .view .modal-dialog .modal-overlay{
+      width: 250px;
+    }
+}

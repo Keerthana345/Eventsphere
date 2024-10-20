@@ -1,0 +1,81 @@
+.register-page{
+    font-family: sans-serif;
+    background-color: #e7edf4;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    min-height: 100vh;
+    position: relative;
+}
+.register-container{
+    width: 80%;
+    margin: auto;
+    box-shadow: -5px -5px 5px grey,5px 5px 5px grey;
+    background-color: white;
+    padding: 2%;
+    margin-top: 4%;
+    transition: transform 0.3s ease;
+}
+.register-container form{
+    border-radius: 10px;
+}
+.register-container:hover{
+    box-shadow: 15px 15px 20px grey,-15px -15px 20px grey;
+    transform: scale(1.01);
+}
+.register-container .register-info,.register-container .button{
+    text-align: center;
+}
+.register-container .button .btn:hover{
+    background-color: rgb(11, 129, 90);
+}
+.register-container span{
+    color: rgb(11, 129, 90);
+}
+.register-container h1{
+    font-weight: bold;
+}
+.register-page form label{
+    font-weight: bold;
+}
+.register-page .back{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.register-page .back:hover{
+    color: gray;
+}
+.register-page .modal-overlay {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.register-page .modal-overlay .modal-content {
+    width: 400px;
+    box-shadow: 5px 5px 5px grey, -5px -5px 5px grey;
+    background-color: white;
+    padding: 1rem; 
+}
+@media  screen and (max-width:576px) {
+    .register-page.modal-dialog .modal-overlay{
+      width: 250px;
+    }
+}
+@media screen and (min-width:577px) and (max-width:996px){
+    .register-container{
+        width: 85%;
+    }
+}
+@media screen and (max-width:556px){
+    .register-container{
+        width: 95%;
+    }
+}

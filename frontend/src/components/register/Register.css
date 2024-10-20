@@ -1,0 +1,47 @@
+.register{
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    background-color: #e7edf4;
+}
+.register .child1,.register .child2{
+    width: 600px;
+}
+.register .child1{
+    background-color: white;
+    padding: 4%;
+}
+.register .child1 img{
+    width: 100%;
+}
+.register form .button{
+    text-align: center;
+}
+.register .child2 form{
+    width: 100%;
+    border-radius: 10px;
+}
+.register form .b{
+    background-color: #575757;
+    color: white;
+    padding: 10px;
+}
+.register form .b:hover{
+    background-color: rgb(87, 201, 240);
+}
+.register .child2 form input{
+    background-color: rgb(245, 239, 239);
+    border: 1px solid rgb(87, 201, 240);
+}
+.register h1,.register p,.register h3{
+    text-align: center;
+}
+.register .h3{
+    color: rgb(244, 69, 127);
+}
+.register form:hover{
+    box-shadow: 10px 10px 20px gray;
+}

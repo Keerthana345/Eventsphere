@@ -1,0 +1,73 @@
+.Home{
+    font-family: sans-serif;
+}
+.Home .image{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding: 2%;
+}
+.Home .image .child1,.Home .image .child2{
+    width: 500px;
+}
+.Home .image h1{
+    color: rgb(11, 129, 90);
+}
+.Home .image .child1 span{
+    font-size: xx-large;
+    color: rgb(11, 129, 90);
+}
+.Home .body{
+    text-align: center;
+}
+.Home .body .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 120px;
+    background-color: #e7edf4;
+    border-top: 8px solid lightgray;
+    padding-bottom: 5%;
+}
+.Home .body .flex1{
+    width: 450px;
+    padding: 50px;
+    box-shadow: -3px -3px 3px grey,3px 3px 3px grey;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+.Home .body .flex1:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px gray;
+}
+.Home .body .flex2{
+    width: 450px;
+    padding: 50px;
+    box-shadow: -3px -3px 3px grey,3px 3px 3px grey;
+    border-radius: 10px;    
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+    background-color: white;
+}
+.Home .body .flex2:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px gray;
+}
+.Home .body .flex img{
+    width: 100%;
+    height: 250px;
+}
+.Home .body .flex h2{
+    color: rgb(11, 129, 90);
+}
+@media screen and (max-width:576px){
+    .Home .image .child1,.Home .image .child2{
+        width: 100%;
+    }
+}

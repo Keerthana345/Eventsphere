@@ -1,0 +1,47 @@
+.eventparticipants .image {
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    background-image: url('https://scholarships.gov.in/public/assets2425/images/banner/weferfe.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.eventparticipants{
+    font-family: sans-serif;
+}
+.eventparticipants .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e7edf4;
+    opacity: 0.3;
+    z-index: 1; 
+}
+.eventparticipants .main{
+    width: 60%;
+    margin: auto;
+}
+.eventparticipants .main h1{
+    text-align: center;
+}
+.eventparticipants .main .but{
+    text-align: center;
+}
+.eventparticipants .main .but .btn:hover{
+    background-color: rgb(11, 129, 90);
+}
+@media screen and (min-width:577px) and (max-width:996px){
+    .eventparticipants .main{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:556px){
+    .eventparticipants .main{
+        width: 90%;
+        margin: auto;
+    }
+}

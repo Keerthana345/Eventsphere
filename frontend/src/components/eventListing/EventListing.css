@@ -1,0 +1,72 @@
+.main6{
+    background-color: #e7edf4;
+    min-height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+  }
+  .event-listing {
+      background-color: white;
+      box-shadow: -5px -5px 5px grey,5px 5px 5px grey;
+      width: 85%;
+      padding: 2%;
+      margin: auto;
+    }
+    .event-listing span{
+        color: rgb(11, 129, 90);
+    }
+    
+    .event-listing h1{
+      margin-top: 30px;
+    }
+    .event-listing h2{
+      margin-top: 20px;
+    }
+    .event-listing h5{
+      margin-bottom: 50px;
+      margin-top: 30px;
+      color: rgb(11, 129, 90);
+      font-size: 1.5rem;
+    }
+    .event-listing table {
+      width: 90%;
+      border-collapse: collapse;
+      margin: auto;
+    }
+    
+    .event-listing table th, .event-listing table td {
+      border: 1px solid #c4c1c1;
+      padding: 8px;
+    }
+    
+    .event-listing table th {
+      background-color: #e7edf4;
+      padding: 2%;
+    }
+    .event-listing table td{
+      padding: 2%;
+    }
+    
+    .event-listing button {
+      background-color: #e7edf4;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+    .main6 .back{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    .main6 .back:hover{
+        color:grey;
+    }
+    .event-listing button:hover{
+        background-color: rgb(11, 129, 90);
+    }
+    @media screen and (max-width:576px){
+      .event-listing{
+        width: 95%;
+      }
+  }
