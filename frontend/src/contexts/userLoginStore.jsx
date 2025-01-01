@@ -10,7 +10,7 @@ function userLoginStore({children}) {
     //make login req
     async function loginUser(userCred){
         try{
-            let res=await fetch('http://localhost:4000/manager-api/login',{
+            let res=await fetch('https://eventsphere-backend-5swm.onrender.com/manager-api/login',{
                 method:"POST",
                 headers:{"Content-type":"application/json"},
                 body:JSON.stringify(userCred)
