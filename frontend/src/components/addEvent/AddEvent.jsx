@@ -25,7 +25,7 @@ function AddEvent() {
   async function onEventAdd(event) {
     const eventData = { ...event, username: currentUser.username };
     try {
-      let res = await fetch('http://localhost:4000/event-api/event', {
+      let res = await fetch('https://eventsphere-backend-5swm.onrender.com/event-api/event', {
         method: "POST",
         headers: { "Content-type": "application/json", "Authorization": `Bearer ${sessionStorage.getItem('token')}` },
         body: JSON.stringify(eventData)
