@@ -20,7 +20,7 @@ function EditEvent() {
 
   async function editEvents() {
     try {
-      const res = await fetch('http://localhost:4000/event-api/events', {
+      const res = await fetch('https://eventsphere-backend-5swm.onrender.com/event-api/events', {
         method: "GET",
         headers: { "Content-Type": "application/json" , "Authorization": `Bearer ${sessionStorage.getItem('token')}`},
       });
@@ -70,7 +70,7 @@ function EditEvent() {
       updatedEvent.teamSize=null; 
     }
     try {
-      const res = await fetch(`http://localhost:4000/event-api/event/${eventId}`, {
+      const res = await fetch(`https://eventsphere-backend-5swm.onrender.com/event-api/event/${eventId}`, {
         method: 'PUT',
         headers: { 'Content-type': 'application/json', "Authorization": `Bearer ${sessionStorage.getItem('token')}`},
         body: JSON.stringify(updatedEvent),
