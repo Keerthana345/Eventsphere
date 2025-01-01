@@ -13,7 +13,7 @@ function RegisteredUser() {
 
   async function fetchRegisteredUser() {
     try {
-      const res = await fetch('http://localhost:4000/user-api/users',{
+      const res = await fetch('https://eventsphere-backend-5swm.onrender.com/user-api/users',{
         method: "GET",
         headers: { "Content-Type": "application/json" , "Authorization": `Bearer ${sessionStorage.getItem('token')}`},
       });
