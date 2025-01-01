@@ -15,7 +15,7 @@ function ViewRegisteredUsers() {
 
   async function fetchRegistrations() {
     try {
-      const response = await fetch('http://localhost:4000/user-api/users',{
+      const response = await fetch('https://eventsphere-backend-5swm.onrender.com/user-api/users',{
         method: "GET",
         headers: { "Content-Type": "application/json" , "Authorization": `Bearer ${sessionStorage.getItem('token')}`},
       });
