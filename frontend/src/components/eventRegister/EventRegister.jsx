@@ -14,13 +14,13 @@ function EventRegister() {
 
   async function checkEmailAndPhone(data) {
     try {
-      const emailResponse = await fetch(`http://localhost:4000/user-api/check-email?email=${data.email}`);
+      const emailResponse = await fetch(`https://eventsphere-backend-5swm.onrender.com/user-api/check-email?email=${data.email}`);
       const emailResult = await emailResponse.json();
       if (emailResult.exists) {
         throw new Error('Email already exists');
       }
 
-      const phoneResponse = await fetch(`http://localhost:4000/user-api/check-phone?phone=${data.phone}`);
+      const phoneResponse = await fetch(`https://eventsphere-backend-5swm.onrender.com/user-api/check-phone?phone=${data.phone}`);
       const phoneResult = await phoneResponse.json();
       if (phoneResult.exists) {
         throw new Error('Phone number already exists');
@@ -36,7 +36,7 @@ function EventRegister() {
       await checkEmailAndPhone(data);
       
       const submissionData = { ...data, eventId: state.event._id };
-      const res = await fetch('http://localhost:4000/user-api/user', {
+      const res = await fetch('https://eventsphere-backend-5swm.onrender.com/user-api/user', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
