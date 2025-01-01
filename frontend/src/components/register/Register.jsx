@@ -13,7 +13,7 @@ function Register() {
 
   async function onUserRegister(newUser) {
     try{
-      let res=await fetch('http://localhost:4000/manager-api/managers',
+      let res=await fetch('https://eventsphere-backend-5swm.onrender.com/manager-api/managers',
         {
           method:'POST',
           headers:{"content-type":"application/json"},
