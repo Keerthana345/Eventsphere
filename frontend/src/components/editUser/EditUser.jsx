@@ -23,7 +23,7 @@ function EditUser() {
     }, [currentUser, setValue]);
 
     async function onSave(modifiedUser) {
-        let res = await fetch(`http://localhost:4000/manager-api/manager/${currentUser._id}`, {
+        let res = await fetch(`https://eventsphere-backend-5swm.onrender.com/manager-api/manager/${currentUser._id}`, {
             method: 'PUT',
             headers: { "content-type": "application/json", "Authorization": `Bearer ${sessionStorage.getItem('token')}` },
             body: JSON.stringify(modifiedUser)
