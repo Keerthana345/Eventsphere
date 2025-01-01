@@ -17,7 +17,7 @@ function ViewEvents() {
 
   async function addedEvents() {
     try {
-      const res = await fetch(`http://localhost:4000/event-api/events/${currentUser.username}`, {
+      const res = await fetch(`https://eventsphere-backend-5swm.onrender.com/event-api/events/${currentUser.username}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" , "Authorization": `Bearer ${sessionStorage.getItem('token')}`},
       });
@@ -41,7 +41,7 @@ function ViewEvents() {
   async function handleDeleteEvent() {
     if (eventToDelete) {
       try {
-        await fetch(`http://localhost:4000/event-api/events/${eventToDelete}`, {
+        await fetch(`https://eventsphere-backend-5swm.onrender.com/event-api/events/${eventToDelete}`, {
           method: "DELETE",
           headers: { "Content-Type": "application/json" , "Authorization": `Bearer ${sessionStorage.getItem('token')}`},
         });
