@@ -1,13 +1,12 @@
 const exp=require('express')
 const app=exp()
 const cors=require('cors')
-app.use(cors({
-    origin:['http://localhost:5173','http://localhost:5174']
-}))
+app.use(cors())
 require('dotenv').config()
 
 const {MongoClient}=require('mongodb')
 let mClient=new MongoClient(process.env.DB_URL)
+const port=process.env.PORT || 4000
 
 mClient.connect()
 .then((connectionObj)=>{
@@ -20,7 +19,7 @@ mClient.connect()
     app.set('usersCollection',usersCollection)
 
     console.log('DB connection successful')
-    app.listen(process.env.PORT,()=>console.log('http server started on port 4000'))
+    app.listen(port,()=>console.log(`http server started on port ${port}`))
 })
 .catch(err=>console.log("Error in DB connection",err))
 
