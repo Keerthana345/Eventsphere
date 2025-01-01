@@ -13,7 +13,7 @@ function EventListing() {
   const date = state.date; 
   async function fetchEvents() {
     try {
-      const response = await fetch('http://localhost:4000/event-api/eventlistings');        
+      const response = await fetch('https://eventsphere-backend-5swm.onrender.com/event-api/eventlistings');        
       const data = await response.json();
       const eventlistings = data.payload;
       setEvents(eventlistings);
